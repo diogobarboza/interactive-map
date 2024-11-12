@@ -3,17 +3,13 @@
 <head>
   <title>Interactive Map</title>
   <link rel="stylesheet" href="map.css">
+  <script src="raphael.min.js"></script> <!-- Ensure this library is loaded if required -->
   <script src="map.js"></script>
   <script src="paths.js"></script>
   <script src="settings.js"></script>
 </head>
 <body>
-<div id='map-container'></div>
-  <link href="map.css" rel="stylesheet">
-  <script src="raphael.min.js"></script>
-  <script src="settings.js"></script>
-  <script src="paths.js"></script>
-  <script src="map.js"></script>
+  <div id="map-container"></div>
   <script>
     var map = new FlaMap(map_cfg);
     map.drawOnDomReady('map-container');
